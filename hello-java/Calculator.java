@@ -29,15 +29,14 @@ public class Calculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("=== CALCULADORA JAVA ===");
-        System.out.println("=== CALCULADORA ===");
+        System.out.println("=== CALCULADORA EM JAVA ===");
+        System.out.println("Dois Numeros e depois escolhe a operação!");
 
         System.out.print("Digite o primeiro número: ");
-        double n1 = scanner.nextDouble();
+        double numero1 = scanner.nextDouble();
 
         System.out.print("Digite o segundo número: ");
-        System.out.print("Digite o segundo número: ");
-        double n2 = scanner.nextDouble();
+        double numero2 = scanner.nextDouble();
 
         System.out.println("\nEscolha a operação:");
         System.out.println("1 - Soma");
@@ -50,16 +49,16 @@ public class Calculator {
 
         switch (opcao) {
             case 1:
-                resultado = soma(n1, n2);
+                resultado = soma(numero1, numero2);
                 break;
             case 2:
-                resultado = subtracao(n1, n2);
+                resultado = subtracao(numero1, numero2);
                 break;
             case 3:
-                resultado = multiplicacao(n1, n2);
+                resultado = multiplicacao(numero1, numero2);
                 break;
             case 4:
-                resultado = divisao(n1, n2);
+                resultado = divisao(numero1, numero2);
                 break;
             default:
                 System.out.println("Opção inválida!");
